@@ -1,0 +1,2 @@
+# DataScienceCourseKNU
+learning R
