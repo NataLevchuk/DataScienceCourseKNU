@@ -1,0 +1,70 @@
+---
+title: "Lab1"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## R Markdown
+
+This is an R Markdown document. Markdown is a simple formatting syntax for authoring HTML, PDF, and MS Word documents. For more details on using R Markdown see <http://rmarkdown.rstudio.com>.
+
+When you click the **Knit** button a document will be generated that includes both content as well as the output of any embedded R code chunks within the document. You can embed an R code chunk like this:
+
+```{r cars}
+summary(cars)
+```
+
+## Including Plots
+
+You can also embed plots, for example:
+
+```{r pressure, echo=FALSE}
+plot(pressure)
+```
+
+Note that the `echo = FALSE` parameter was added to the code chunk to prevent printing of the R code that generated the plot.
+
+getwd()
+setwd("D:/Levchuk/Statistics/R/Egorchenkov")
+#Lab1
+##Task 1. Objects
+x<-21.5 #numeric
+y<-"nata"#character
+z<-1L#integer
+n<-2+3i#complex
+m<-T#logical
+
+#Task2. Vectors
+x<-5:75
+y<-c(3.14,2.71,0,13)
+z<-vector("logical", length=100) # FALSE
+
+
+#Task3. Matrix
+x<-c(0.5,3.9,0,2)
+y<-c(1.3,131,2.2,7)
+z<-c(3.5,2.8,4.6,5.1)
+cbind(x,y,z)
+
+#Task4.List
+x<-list(21,1992L,"nata",TRUE, 21+7i)
+
+#Task5. Factor
+x<-factor(c("baby","child","baby","child","adult","adult"),
+levels=c("baby","child","adult"))
+
+#Task6.NA
+x<-c(1,2,3,4,NA,6,7,NA,9,NA,11)
+is.na(x)
+
+#Task7.Data frame
+x<-data.frame(age=15:19,sex=c("male","female","male","male","female"),edu=c(T,F,T,T,F))
+
+#Task8.Names
+names(x)=c("age_det","sex_det","edudet")
+
+
+
